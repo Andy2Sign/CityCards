@@ -31,27 +31,93 @@ body {
 	position: relative;
 }
 
-/* .card img:hover{
-	opacity: 0.3;
+
+img{
+	overflow-clip-margin: content-box;
+  overflow: clip;
+	max-width: 100%;
+	height: auto;
+	max-height: 210px;
+	border-radius: 10px;
+	cursor: pointer;
+	vertical-align: top;
+	
+}
+
+.box_item-red{
+	background-color:#ADD8E6;
+	border-radius: 20px;
+}
+
+.box_item-red:hover img{
+  opacity: 0.3;
   filter: grayscale(100%);
 }
 
-#symbol{
-	position: absolute;
-	top: 25%;
-	left: 43%;
-	border-radius: 50%;
-  font-size: 34px;
-  color: #000000;
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
-  background: #ffffff;
-  transform: translate(-50%, -50%) scale(0);
-  transition: transform 300ms 0ms cubic-bezier(0.6, -0.28, 0.735, 0.045); 
-} 
+.box_item-red * {
+	transition: all .35s ease-in-out;
+}
 
-#symbol:hover{
+
+.span_symbol{
+	position: absolute;
+  top: 25%;
+  left: 45%;
+	border-radius: 45px;
+	background: #ffffff;
+	width: 40px;
+	height: 40px;
+}
+
+
+.material-symbols-outlined{
+	
+  position: absolute;
+  font-size: 64px;
+  /* line-height: 60px; */
+
+	color: #e31b6d;
+  left: 20%;
+	top: 20%;
+
+	
+}
+
+
+
+
+
+
+
+box-item_red {
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 300ms 0ms cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+box-item_red:hover {
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 300ms 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* .card img:hover{
+	opacity: 0.3;
+  filter: grayscale(100%);
+}*/
+
+/* #symbol_red{
+display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased; 
+}  */
+
+
+
+
+
+
+/*#symbol:hover{
 	transform: translate(-50%, -50%) scale(1);
   transition: transform 300ms 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 } */ 
@@ -90,12 +156,6 @@ body {
   transition: 1s;
 }
 
-img {
-  width: 350px;
-  max-height: 210px;
-  border-radius: 10px;
-  cursor: pointer;
-}
 
 .cont-city-name {
   display: block;
@@ -197,7 +257,7 @@ h3 {
   text-align: center;
 }
 
-i {
+#i_arrow {
   position: absolute;
   color: #e31b6d;
   cursor: pointer;
