@@ -7,7 +7,6 @@ body {
   display: flex;
 	align-content: center;
   justify-content: space-around;
-  padding: 10px;
   font-family: "Open Sans", sans-serif;
   padding: 40px;
 }
@@ -101,6 +100,14 @@ box-item:hover {
 	color: #e31b6d;
   left: 20%;
 	top: 20%;
+}
+
+.box_item .span_symbol{
+	transform: scale(0);
+}
+
+.box_item:hover .span_symbol{
+	transform: scale(1);
 }
 
 
